@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="/stylesheets/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+  <title>TFL</title>
+</head>
+
+<body class="body">
+
+<div class="tflLogoContainer">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Transport_for_London_logo_%282013%29.svg" class="tflLogo" alt="">
+</div>
+
+    <div class="mainHidden">
+      <div class="tflMapContainer">
+        <img class="tflMap" src="https://upload.wikimedia.org/wikipedia/commons/e/e2/London_Underground_Overground_DLR_Crossrail_map_alt.svg" alt="" usemap="#Map" />
+        <map name="Map" id="Map">
+          <area id="oxfordMap"     alt="" title="" href="#" shape="poly" coords="1137,653,1245,655,1244,741,1161,739" />
+          <area id="camdenMap"     alt="" title="" href="#" shape="poly" coords="1175,378,1236,379,1240,441,1167,439" />
+          <area id="regentsMap"    alt="" title="" href="#" shape="poly" coords="1093,604,1176,669,1217,626,1157,579" />
+          <area id="bakerMap"      alt="" title="" href="#" shape="poly" coords="1091,603,1175,667,1063,681,1033,608" />
+          <area id="bridgeMap"     alt="" title="" href="#" shape="poly" coords="1517,760,1518,826,1647,831,1631,762" />
+          <area id="leicesterMap"  alt="" title="" href="#" shape="poly" coords="1268,695,1266,747,1388,749,1388,692" />
+          <area id="shoreditchMap" alt="" title="" href="#" shape="poly" coords="1691,520,1608,514,1605,564,1687,564" />
+          <area id="waterlooMap"   alt="" title="" href="#" shape="poly" coords="1346,832,1409,827,1416,881,1345,882" />
+
+      </map>
+      </div>
+
+      <div class="sidebarContainer">
+        <div class="sidebarLogoContainer">
+          <img class="sidebarLogo" src="http://londonroadsafetycouncil.org.uk/wp-content/uploads/2016/05/TfL-logo.png" alt="TFL Logo">
+        </div>
+        <div class="sidebarDropdowns">
+
+          <a class="menuButtons" id="bakerButton" href="#">Baker Street</a>
+          <a class="menuButtons" id="camdenButton" href="#">Camden Town</a>
+          <a class="menuButtons" id="leicesterButton" href="#">Leicester Square</a>
+          <a class="menuButtons" id="bridgeButton" href="#">London Bridge</a>
+          <a class="menuButtons" id="oxfordButton"href="#">Oxford Circus</a>
+          <a class="menuButtons" id="regentsButton"href="#">Regent's Park</a>
+          <a class="menuButtons" id="shoreditchButton"href="#">Shoreditch</a>
+          <a class="menuButtons" id="waterlooButton"href="#">Waterloo</a>
+          <a href="#">
+            <img src="https://png.icons8.com/small/50/000000/circled-chevron-down.png" id="menuDownButton" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+  <!-- B A K E R  S T R E E T -->
+<div class="bakerBackground"></div>
+  <div class="bakerHidden">
+    <div class="infoContainer col-sm-4 col-xs-5">
+
+      <div class="infoTitle col-xs-12">
+        <p>Baker Street</p>
+      </div>
+      <div class="infoSubtext col-xs-12">
+        <p>
+          Baker Street is a street in the Marylebone district of the City of Westminster in London. It forms part of the A41. It is most famous
+           for its connection to the fictional detective Sherlock Holmes, who lived at 221B Baker Street, an address that did not actually exist
+           in Sherlock Holmes' era (the address now graces a building housing a "Sherlock Holmes museum"). The street is named after builder
+           William Baker who laid the street out in the eighteenth century. It was originally a high class residential address, but now is
+           mainly occupied by commercial premises. <br><br>The street is served by the London Underground by Baker Street tube station;
+           next to the station is Transport for London's lost property office. Baker Street Station is one of the world's oldest surviving
+           underground stations.<br><br>
+          <i class="material-icons"> local_bar fastfood subway</i>
+        </p>
+      </div>
+
+      <button type="button" id="homeBaker" class="homeButton btn btn-outline-secondary">
+          Home
+      </button>
+    </div>
+
+    <div class="imageContainer col-sm-8 col-xs-7">
+      <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/3/33/221B_Baker_Street%2C_London_-_Sherlock_Holmes_Museum.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="bakerOne" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="http://gophotolondon.com/wp-content/uploads/2014/08/baker-street-station-5-1024x725.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="bakerTwo" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/8/89/Sign_at_Sherlock_Holmes_Museum_in_Baker_St_221b.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="bakerThree" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="http://newlondondevelopment.com/full/54f838c269702d1102750100/11BakerStreet-E05-L-05051_%C2%A9_Will_Pryce.jpg?1425553602">
+        <div class="col-sm-6 col-lg-4">
+          <div id="bakerFour" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://www.commerciallistings.cbre.co.uk/resources/fileassets/GB-Plus-276369/4e14d65e/slide1_Photo_1_large.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="bakerFive" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://i2-prod.getwestlondon.co.uk/incoming/article13395571.ece/ALTERNATES/s1227b/2707BakerStreetOldPics_14.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="bakerSix" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://i2-prod.getwestlondon.co.uk/incoming/article13395577.ece/ALTERNATES/s1227b/2707BakerStreetOldPics_16.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="bakerSeven" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/f/f4/Baker_Street_stn_Jubilee_line_platform_motif.JPG">
+        <div class="col-sm-6 col-lg-4">
+          <div id="bakerEight" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/2/27/Baker_Street_Sign.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="bakerNine" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/1/12/Sherlock_Holmes_tableau_1.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="bakerTen" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/b/b1/Baker_Street_-_geograph.org.uk_-_4612019.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="bakerEleven" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/c/cb/Baker_Street_map_Open_Street_Map.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="bakerTwelve" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+  <!-- C A M D E N  T O W N -->
+<div class="camdenBackground"></div>
+  <div class="camdenHidden">
+    <div class="infoContainer col-sm-4 col-xs-5">
+
+      <div class="infoTitle col-xs-12">
+        <p>Camden Town</p>
+      </div>
+      <div class="infoSubtext col-xs-12">
+        <p>
+          Camden: home to sprawling street markets, world-famous music venues, first-class museums and theatres,
+          London Zoo, 681 acres of Hampstead Heath and some of the city’s busiest transport hubs. <br><br>With
+          bustling Covent Garden at its tip and fed by the arteries of Euston and King’s Cross, the borough fans
+          out to Kilburn in the west, Hampstead and Highgate in the north and Kentish Town to the east.
+          Camden has 36 designated Conservation Areas, over 5,600 listed buildings and the seventh largest economy
+          in the UK, with an estimated 248,000 jobs.<br><br>
+          <i class="material-icons"> theaters local_bar fastfood local_mall subway</i>
+        </p>
+      </div>
+
+      <button type="button" id="homeCamden" class="homeButton btn btn-outline-secondary">
+          Home
+      </button>
+    </div>
+
+    <div class="imageContainer col-sm-8 col-xs-7">
+      <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Camden_Town_9.jpg/800px-Camden_Town_9.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="camdenOne" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://cdn.thenudge.com/wp-content/uploads/KERB_CAMDEN_788.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="camdenTwo" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="http://i0.wp.com/www.sara-sees.com/wp-content/uploads/2016/02/camden3.png">
+        <div class="col-sm-6 col-lg-4">
+          <div id="camdenThree" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="http://i0.wp.com/www.sara-sees.com/wp-content/uploads/2016/02/camden4.png?w=2188">
+        <div class="col-sm-6 col-lg-4">
+          <div id="camdenFour" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="http://i0.wp.com/www.sara-sees.com/wp-content/uploads/2016/02/camden20.png?w=2188">
+        <div class="col-sm-6 col-lg-4">
+          <div id="camdenFive" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://media.timeout.com/images/101557295/750/422/image.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="camdenSix" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://www.divento.com/16373/camden-market-site-of-interest.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="camdenSeven" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/c/c3/The_World%27s_End.JPG">
+        <div class="col-sm-6 col-lg-4">
+          <div id="camdenEight" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/f/f8/2016-02_Camden_Lock_Market_Hall_03.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="camdenNine" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/c/cd/KOKO_in_Camden_%283716636426%29.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="camdenTen" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/0/09/Camden_Lock_Market_Hall_at_night.jpg">
+        <div class="col-sm-6 col-lg-4">
+          <div id="camdenEleven" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+
+      <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/2/24/Camden_Town_18_Dec_2015_02.JPG">
+        <div class="col-sm-6 col-lg-4">
+          <div id="camdenTwelve" class="col-sm-12">
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- L E I C E S T E R  S Q U A R E -->
+<div class="leicesterBackground"></div>
+<div class="leicesterHidden">
+<div class="infoContainer col-sm-4 col-xs-5">
+
+  <div class="infoTitle col-xs-12">
+    <p>Leicester Square</p>
+  </div>
+  <div class="infoSubtext col-xs-12">
+    <p>Leicester Square is world renowned for its diverse offering.<br>Enjoy one of
+    many shows on offer or witness the sparkle of red carpet premieres at one of the world-class
+    cinemas averaging one premiere every week. The square attracts Hollywood actors from around the
+    world who come to walk the red carpet.<br>Sweet loving families will not want to miss Europe’s
+    biggest sweet shop, M&M's World, which is large enough to house 100 double decker buses.
+    Opposite is the largest LEGO Store on the planet, home to a 200,000 brick model of Big Ben
+    and the LEGO Mosaic Maker photo booth. <br> Try your luck at one of the casinos and soak up
+    the atmosphere in beautifully restored buildings, some with views across central London,
+    such as The Hippodrome Casino, Casino at the Empire, Grosvenor Casino and more.<br><br>
+      <i class="material-icons">local_bar casino theaters fastfood subway</i>
+    </p>
+  </div>
+  <button type="button" id="homeLeicester" class="homeButton btn btn-outline-secondary">
+      Home
+  </button>
+</div>
+
+<div class="imageContainer col-sm-8 col-xs-7">
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/1/1c/Leicester_Square_by_Paul_in_London.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="leicesterOne" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/b/bf/Leicester_Square_tube_station.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="leicesterTwo" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/4/47/Bust_of_Newton_-_Leicester_Square_Gardens%2C_London_%284039221607%29.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="leicesterThree" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/9/95/Empire_at_Leicester_Square_London.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="leicesterFour" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/c/cf/Leicester_Square_from_Building.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="leicesterFive" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/3/3b/Leicester_Square_Christmas_Fair.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="leicesterSix" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/a/a6/Leicester_Square_-_panoramio_%281%29.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="leicesterSeven" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/2/20/Leicester_Square_stn_Piccadilly_eastbound_look_west.JPG">
+    <div class="col-sm-6 col-lg-4">
+      <div id="leicesterEight" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/f/f9/Leicester_Square_M%26M%27s_World_interior_in_March_2012_3.JPG">
+    <div class="col-sm-6 col-lg-4">
+      <div id="leicesterNine" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/6/65/Christmas_Circus_at_Leicester_Square.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="leicesterTen" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/3/32/Decorations_Leicester_Square_%286478467341%29.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="leicesterEleven" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/5/5a/The_Hippodrome_Casino_-_Leicester_Square_Station_-_panoramio.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="leicesterTwelve" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+</div>
+</div>
+</div>
+
+
+<!-- L O N D O N  B R I D G E -->
+<div class="bridgeBackground"></div>
+<div class="bridgeHidden">
+<div class="infoContainer col-sm-4 col-xs-5">
+
+  <div class="infoTitle col-xs-12">
+    <p>London Bridge</p>
+  </div>
+  <div class="infoSubtext col-xs-12">
+    <p>
+      London Bridge is a central London railway terminus and connected London Underground station in
+      Southwark, south-east London. It occupies a large area on three levels immediately south-east of
+      London Bridge, from which it takes its name. The main line station is the oldest railway station
+      in London fare zone 1 and one of the oldest in the world having opened in 1836. It is one of two
+      main line termini in London to the south of the River Thames (the other being Waterloo) and is
+      the fourth-busiest station in London, handling over 50 million customers a year.<br><br>
+      <i class="material-icons">local_bar location_city restaurant subway</i>
+    </p>
+  </div>
+  <button type="button" id="homeBridge" class="homeButton btn btn-outline-secondary">
+      Home
+  </button>
+</div>
+
+<div class="imageContainer col-sm-8 col-xs-7">
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/9/9e/HMS_Belfast_1_db_cropped.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="bridgeOne" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/2/2c/Tower_of_London_viewed_from_the_River_Thames.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="bridgeTwo" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/c/cb/Swissre.and.tower42.london.arp.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="bridgeThree" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/9/9d/Southwark_Cathedral_at_night.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="bridgeFour" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/c/ca/Southwark.cathedral.nave.london.arp.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="bridgeFive" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Globe_Theatre_London.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="bridgeSix" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/a/a7/Globe_Theatre_Innenraum.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="bridgeSeven" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/9/97/The_Shard%2C_11_Novembre_2012_%28tone%29.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="bridgeEight" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/4/4b/The_Shard_London_22.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="bridgeNine" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/e/e2/Old_Billingsgate_Market_Mars_2014_01.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="bridgeTen" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/4/48/London_Bridge_security_barriers.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="bridgeEleven" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/5/59/Tower_Bridge_at_Dawn.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="bridgeTwelve" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+</div>
+</div>
+</div>
+
+
+<!-- O X F O R D  S T R E E T -->
+<div class="oxfordBackground"></div>
+<div class="oxfordHidden">
+  <div class="infoContainer col-sm-4 col-xs-5">
+
+    <div class="infoTitle col-xs-12">
+      <p>Oxford Circus</p>
+    </div>
+    <div class="infoSubtext col-xs-12">
+      <p>
+        Oxford Circus is a London Underground station serving Oxford Circus at the junction of Regent
+        Street and Oxford Street, with entrances on all four corners of the intersection. The station
+        is an interchange between the Bakerloo, Central and Victoria lines. <br> <br>As of 2016, it is
+        the 4th busiest rapid transit station in the United Kingdom, with 83.26 million entries and
+        exits.On the Central line it is between Bond Street and Tottenham Court Road, on the Bakerloo
+        line it is between Regent's Park and Piccadilly Circus, and on the Victoria line it is between
+        Green Park and Warren Street. The station is in Travelcard Zone 1.<br><br>
+        <i class="material-icons"> theaters local_bar local_mall fastfood subway</i>
+      </p>
+    </div>
+    <button type="button" id="homeOxford" class="homeButton btn btn-outline-secondary">
+        Home
+    </button>
+  </div>
+
+  <div class="imageContainer col-sm-8 col-xs-7">
+    <a class="fancybox" rel="gallery1" href="https://media.timeout.com/images/103004452/750/422/image.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="oxfordOne" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://www.londoncocktailclub.co.uk/wp-content/uploads/2016/11/viewbar-oxford-1.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="oxfordTwo" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://thespaces.com/wp-content/uploads/2018/04/culpeper-london.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="oxfordThree" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://www.justopenedlondon.com/wp-content/uploads/2017/01/ralphs-coffee4.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="oxfordFour" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://secretldn.com/wp-content/uploads/2016/05/notch-1.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="oxfordFive" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://blog.etsy.com/uk/files/2016/07/JohnLewis-GardeningSociety-0393.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="oxfordSix" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="http://redonline.cdnds.net/main/thumbs/18013/the-culpeper-rooftop-bar-restaurant-redonline.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="oxfordSeven" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Oxford_Circus_stn_Bakerloo_building.jpg/800px-Oxford_Circus_stn_Bakerloo_building.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="oxfordEight" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://www.filgezi.com/wp-content/uploads/2018/02/londra-gezi-rehberi-oxford-caddesi.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="oxfordNine" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/07/14/11/oxford-street.jpg?w968h681">
+      <div class="col-sm-6 col-lg-4">
+        <div id="oxfordTen" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="http://www.londonfeed.com/wp-content/uploads/2015/09/Oxford_Street.jpeg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="oxfordEleven" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/a/ae/Oxford_Circus_Bakerloo_Line_northbound.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="oxfordTwelve" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+
+<!-- R E G E N T S  P A R K -->
+<div class="regentsBackground"></div>
+<div class="regentsHidden">
+  <div class="infoContainer col-sm-4 col-xs-5">
+
+    <div class="infoTitle col-xs-12">
+      <p>Regents' Park</p>
+    </div>
+    <div class="infoSubtext col-xs-12">
+      <p>
+        Regent's Park is a London Underground station by Regent's Park in Marylebone, City of Westminster. It is on the Bakerloo line,
+         between Baker Street and Oxford Circus. It is located on Marylebone Road between the two arms of Park Crescent in Travelcard Zone
+         1.<br><br> Regent's park tube is within walking distance to Regent's Park - one of London's most popular open spaces: covering
+         410 acres in north-west London. Originally a hunting ground for Henry VIII, it remained a royals-only retreat long after it was
+         formally designed by John Nash in 1811; only in 1845 did it open to the public as a spectacular shared space.<br><br>
+        <i class="material-icons"> theaters local_bar fastfood subway</i>
+      </p>
+    </div>
+
+    <button type="button" id="homeRegents" class="homeButton btn btn-outline-secondary">
+        Home
+    </button>
+  </div>
+
+  <div class="imageContainer col-sm-8 col-xs-7">
+    <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/5/59/Regent%27s_Park_bandstand.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="regentsOne" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/3/33/Regent%27s_Park_Garden.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="regentsTwo" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/2/2a/Regent%27s_Park_London.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="regentsThree" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/7/74/H.G._WELLS_-_13_Hanover_Terrace_Regent%27s_Park_London_NW1_4JR_est.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="regentsFour" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/c/c6/Regent%27s_Canal_between_Camden_Lock_and_Regent%27s_Park.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="regentsFive" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/f/f3/Regent%27s_Park_Queen_Mary_Gardens_lake_3.JPG">
+      <div class="col-sm-6 col-lg-4">
+        <div id="regentsSix" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/3/30/Regent%27s_Park-Queen_Mary%27s_Gardens.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="regentsSeven" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/7/7d/Pergola_walk%2C_Garden_of_St_John%27s_Lodge%2C_Regent%27s_Park%2C_London.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="regentsEight" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/4/4f/THOMAS_COCHRANE_and_DAVID_EARL_BEATTY_-_Hanover_Lodge_Outer_Circle_Regent%27s_Park_London_NW1_4RJ_%282%29.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="regentsNine" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/3/3e/Decimus_Burton_The_Holme_Regents_Park_December_2005.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="regentsTen" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/8/87/Regent%27s_Park_Terrace2.jpg">
+      <div class="col-sm-6 col-lg-4">
+        <div id="regentsEleven" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+
+    <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/d/d2/Fountain%2C_Regent%27s_Park%2C_London_-_DSC07051.JPG">
+      <div class="col-sm-6 col-lg-4">
+        <div id="regentsTwelve" class="col-sm-12">
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+</div>
+
+<!-- S H O R E D I T C H -->
+<div class="shoreditchBackground"></div>
+<div class="shoreditchHidden">
+<div class="infoContainer col-sm-4 col-xs-5">
+
+  <div class="infoTitle col-xs-12">
+    <p>Shoreditch</p>
+  </div>
+  <div class="infoSubtext col-xs-12">
+    <p>
+      Bordering The City, nestling between Clerkenwell and Bethnal Green, is one of London’s most treasured
+      hotspots for culture, art, fashion and food – Shoreditch. By day and night, Shoreditch is bursting with
+      opportunities to indulge in its variety of dining and entertainment options. East London as a whole has seen huge growth since the London
+      2012 Olympics, with property prices jumping as much as £1,000 a month and prestigious brands such as
+      Google, Bloomberg, Intel and Amazon have decided to set up shop in the area. With the likes of
+      Old Street – or as it is now known, the Silicon Roundabout – emerging as ‘the third-largest technology
+      start-up cluster after San Francisco and New York City’, Shoreditch is becoming the place in the East
+      to both live and do business.
+      <br><br>
+      <i class="material-icons">local_bar theaters fastfood subway</i>
+    </p>
+  </div>
+  <button type="button" id="homeShoreditch" class="homeButton btn btn-outline-secondary">
+      Home
+  </button>
+</div>
+
+<div class="imageContainer col-sm-8 col-xs-7">
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/0/0f/Graffiti_in_Shoreditch%2C_London_-_Jim_Vision%2C_In_memory_of_Frank_Frazetta_%2813822516963%29.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="shoreditchOne" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/9/96/Graffiti_in_Shoreditch%2C_London_-_Dale_Grimshaw_%2813784982583%29.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="shoreditchTwo" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/c/cf/George_and_Dragon%2C_Shoreditch%2C_E2_%282373397809%29.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="shoreditchThree" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/2/2a/Joiners_Arms%2C_Shoreditch%2C_E2_%287371431390%29.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="shoreditchFour" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/4/4f/Shoreditch_High_Street_stn_entrance_April2010.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="shoreditchFive" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/b/b7/Graffiti_in_Shoreditch%2C_London_-_Garage_by_Stik_%289425023786%29.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="shoreditchSix" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/7/7e/Graffiti_in_Shoreditch%2C_London_-_Zabou%2C_Privacy_%2812887906353%29.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="shoreditchSeven" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/6/6f/Boxpark_Croydon.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="shoreditchEight" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://qz.com/wp-content/uploads/2014/03/shoreditch.jpg?quality=80&strip=all&w=940">
+    <div class="col-sm-6 col-lg-4">
+      <div id="shoreditchNine" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="http://igor.gold.ac.uk/~gbass002/wordpress/wp-content/uploads/2016/11/IMG_5946.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="shoreditchTen" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://www.politicalite.com/wp-content/uploads/2018/03/1200px-Brick_Lane_street_signs.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="shoreditchEleven" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://handluggageonly.co.uk/wp-content/uploads/2015/08/hr2_TOMTER_1110_VU_3871.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="shoreditchTwelve" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+</div>
+</div>
+</div>
+
+<!-- W A T E R L O O -->
+<div class="waterlooBackground"></div>
+<div class="waterlooHidden">
+<div class="infoContainer col-sm-4 col-xs-5">
+
+  <div class="infoTitle col-xs-12">
+    <p>Waterloo</p>
+  </div>
+  <div class="infoSubtext col-xs-12">
+    <p>Waterloo is a district in Central London, and part of the Bishops ward of the London Borough of Lambeth.
+       It is situated 1 mile east of Charing Cross. It includes some sections of the London Borough of Southwark.
+       Waterloo is in the heart of the South Bank - London’s cultural district, home to national centres for arts,
+       film and performance (as well as The London Eye!). Waterloo is right by the Thames, in the very heart of the
+       Capital. Big Ben, Covent Garden and Trafalgar Square are all within a 10-minute walk.<br><br>
+      <i class="material-icons">local_bar restaurant fastfood subway train</i>
+    </p>
+  </div>
+  <button type="button" id="homeWaterloo" class="homeButton btn btn-outline-secondary">
+      Home
+  </button>
+</div>
+
+<div class="imageContainer col-sm-8 col-xs-7">
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/9/99/London_Eye_and_Sea_Life_London_Aquarium_at_night.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="waterlooOne" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/c/cc/Uddberbelly_Hong_Kong_201512.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="waterlooTwo" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://i1.wp.com/www.weekender.co.uk/wp-content/uploads/2017/04/underbelly.jpg?fit=800%2C534">
+    <div class="col-sm-6 col-lg-4">
+      <div id="waterlooThree" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/1/12/Aquarium_Tunnels%2C_Kelly_Tarlton_Aquarium.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="waterlooFour" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://almacantar.com/app/uploads/2015/10/3069_4000_160617A_xfer-1400x934.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="waterlooFive" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/7/70/Waterloo-Station-2013.JPG">
+    <div class="col-sm-6 col-lg-4">
+      <div id="waterlooSix" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/8/82/450115_A_London_Waterloo.JPG">
+    <div class="col-sm-6 col-lg-4">
+      <div id="waterlooSeven" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/d/d8/London_Waterloo_station.JPG">
+    <div class="col-sm-6 col-lg-4">
+      <div id="waterlooEight" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/7/78/Thames_at_night_from_Waterloo_Bridge.JPG">
+    <div class="col-sm-6 col-lg-4">
+      <div id="waterlooNine" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/f/ff/2017_at_Waterloo_station_-_Victory_arch_sculpture_%28Britannia%2C_original_image%29.JPG">
+    <div class="col-sm-6 col-lg-4">
+      <div id="waterlooTen" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/d/d2/Southbank_Centre_aerial_photo.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="waterlooEleven" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+
+  <a class="fancybox" rel="gallery1" href="https://upload.wikimedia.org/wikipedia/commons/f/fc/London_Eye_Jan_2006.jpg">
+    <div class="col-sm-6 col-lg-4">
+      <div id="waterlooTwelve" class="col-sm-12">
+      </div>
+    </div>
+  </a>
+</div>
+</div>
+</div>
+
+  <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
