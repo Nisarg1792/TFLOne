@@ -1,0 +1,527 @@
+.body {
+  background-color: #fafafa;
+  overflow-y: hidden;
+}
+
+.tflLogoContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.tflLogo {
+  opacity: 0;
+  display: none;
+  position: relative;
+  top: 150px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.mainHidden {
+  display: none;
+}
+
+.tflMapContainer {
+    position: relative;
+    overflow: hidden;
+    height: 96vh;
+    width: 80vw;
+    left: 18vw;
+    top: 2vh;
+    border-radius: 5px;
+}
+
+.tflMap {
+    position: absolute;
+    overflow: hidden;
+    left: calc(-900px + 10%);
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    border: none;
+    opacity: 0.8;
+    filter: brightness(0.8);
+}
+
+.sidebarContainer {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    height: 430px;
+    width: 240px;
+    background-color: #878787;
+    border-radius: 15px;
+    opacity: 0.95;
+    -webkit-box-shadow: 4px 6px 8px 0px rgba(84,84,84,1);
+    -moz-box-shadow: 4px 6px 8px 0px rgba(84,84,84,1);
+    box-shadow: 4px 6px 8px 0px rgba(84,84,84,1);
+}
+
+.sidebarLogo {
+    position: relative;
+    width: 150px;
+    height: 45px;
+    top: 16px;
+    margin-bottom: 22px;
+    margin-left: 46px;
+}
+
+.sidebarTitle {
+    padding: 30px;
+    width: 100%;
+    display: block;
+    text-align: center;
+    position: relative;
+    font-family: 'Hammersmith One', sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+.menuButtons {
+    width: 70%;
+    height: 30px;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    position: relative;
+    font-family: 'Hammersmith One', sans-serif;
+    color: white;
+    font-size: 16px;
+    background-color: #565656;
+    border-radius: 5px;
+    margin: 9px auto;
+    text-decoration: none;
+}
+
+.menuButtons:hover {
+    background-color: #565656;
+    opacity: 0.8;
+    text-decoration: none;
+    color: white;
+}
+
+#menuDownButton {
+  opacity: .45;
+  width: 14%;
+  height: auto;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Background {
+  z-index: -1000;
+  position: absolute;
+  background: linear-gradient(#fafafa, #fefff2);
+  width: 110vw;
+  height: 110vh;
+  top: 0;
+  right: 0;
+}
+
+.infoContainer {
+  height: 72.2vh;
+  margin-top: 5vh;
+  padding: 12px;
+  text-align: center;
+}
+
+.infoTitle {
+  margin-top: 18px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: relative;
+  font-family: 'Hammersmith One', sans-serif;
+  font-size: 20px;
+}
+
+.infoSubtext {
+  right: -16px;
+  margin-top: 12px;
+  height: 100%;
+  font-size: calc(8px + 0.2vw);
+  text-align: left;
+}
+
+.btn-outline-secondary {
+  background: none;
+transition: 0.2s;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #fafafa;
+  filter: brightness(.9);
+}
+
+.material-icons {
+  text-align: center;
+  display: block;
+  }
+
+.imageContainer {
+  margin-top: 6vh;
+  height: 90vh;
+  overflow-y: scroll;
+  left: 20px;
+}
+
+::-webkit-scrollbar {
+display: none;
+}
+
+.col-sm-12 {
+  object-fit: contain;
+  margin-top: 12px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 2px;
+  background-size: 130%;
+  background-position: center;
+  transition-duration: .5s
+}
+
+.col-sm-12:hover {
+  transform: scale(1.05);
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.col-sm-6 {
+  margin-left: -18px;
+}
+
+.bakerHidden {
+display: none;
+}
+
+#bakerOne {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/33/221B_Baker_Street%2C_London_-_Sherlock_Holmes_Museum.jpg');
+}
+#bakerTwo {
+  background-image: url('http://gophotolondon.com/wp-content/uploads/2014/08/baker-street-station-5-1024x725.jpg');
+}
+#bakerThree{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/89/Sign_at_Sherlock_Holmes_Museum_in_Baker_St_221b.jpg');
+}
+#bakerFour {
+  background-image: url('http://newlondondevelopment.com/full/54f838c269702d1102750100/11BakerStreet-E05-L-05051_%C2%A9_Will_Pryce.jpg?14255536028');
+}
+#bakerFive {
+  background-image: url('https://www.commerciallistings.cbre.co.uk/resources/fileassets/GB-Plus-276369/4e14d65e/slide1_Photo_1_large.jpg');
+}
+#bakerSix {
+  background-image: url('https://i2-prod.getwestlondon.co.uk/incoming/article13395571.ece/ALTERNATES/s1227b/2707BakerStreetOldPics_14.jpg');
+}
+#bakerSeven {
+  background-image: url('https://i2-prod.getwestlondon.co.uk/incoming/article13395577.ece/ALTERNATES/s1227b/2707BakerStreetOldPics_16.jpg');
+}
+#bakerEight {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f4/Baker_Street_stn_Jubilee_line_platform_motif.JPG');
+}
+#bakerNine {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/27/Baker_Street_Sign.jpg');
+}
+#bakerTen {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/12/Sherlock_Holmes_tableau_1.jpg');
+}
+#bakerEleven {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b1/Baker_Street_-_geograph.org.uk_-_4612019.jpg');
+}
+#bakerTwelve {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cb/Baker_Street_map_Open_Street_Map.jpg');
+}
+
+.camdenHidden {
+display: none;
+}
+
+#camdenOne {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Camden_Town_9.jpg/800px-Camden_Town_9.jpg');
+}
+#camdenTwo {
+  background-image: url('https://cdn.thenudge.com/wp-content/uploads/KERB_CAMDEN_788.jpg');
+}
+#camdenThree{
+  background-image: url('http://i0.wp.com/www.sara-sees.com/wp-content/uploads/2016/02/camden3.png');
+}
+#camdenFour {
+  background-image: url('http://i0.wp.com/www.sara-sees.com/wp-content/uploads/2016/02/camden4.png?w=2188');
+}
+#camdenFive {
+  background-image: url('http://i0.wp.com/www.sara-sees.com/wp-content/uploads/2016/02/camden20.png?w=2188');
+}
+#camdenSix {
+  background-image: url('https://media.timeout.com/images/101557295/750/422/image.jpg');
+}
+#camdenSeven {
+  background-image: url('https://www.divento.com/16373/camden-market-site-of-interest.jpg');
+}
+#camdenEight {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c3/The_World%27s_End.JPG');
+}
+#camdenNine {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f8/2016-02_Camden_Lock_Market_Hall_03.jpg');
+}
+#camdenTen {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cd/KOKO_in_Camden_%283716636426%29.jpg');
+}
+#camdenEleven {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/09/Camden_Lock_Market_Hall_at_night.jpg');
+}
+#camdenTwelve {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/24/Camden_Town_18_Dec_2015_02.JPG');
+}
+
+
+.leicesterHidden {
+display: none;
+}
+
+#leicesterOne {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1c/Leicester_Square_by_Paul_in_London.jpg');
+}
+#leicesterTwo {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/bf/Leicester_Square_tube_station.jpg');
+}
+#leicesterThree{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/47/Bust_of_Newton_-_Leicester_Square_Gardens%2C_London_%284039221607%29.jpg');
+}
+#leicesterFour {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/95/Empire_at_Leicester_Square_London.jpg');
+}
+#leicesterFive {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cf/Leicester_Square_from_Building.jpg');
+}
+#leicesterSix {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3b/Leicester_Square_Christmas_Fair.jpg');
+}
+#leicesterSeven {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a6/Leicester_Square_-_panoramio_%281%29.jpg');
+}
+#leicesterEight {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/20/Leicester_Square_stn_Piccadilly_eastbound_look_west.JPG');
+}
+#leicesterNine {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f9/Leicester_Square_M%26M%27s_World_interior_in_March_2012_3.JPG');
+}
+#leicesterTen {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/65/Christmas_Circus_at_Leicester_Square.jpg');
+}
+#leicesterEleven {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/32/Decorations_Leicester_Square_%286478467341%29.jpg');
+}
+#leicesterTwelve {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5a/The_Hippodrome_Casino_-_Leicester_Square_Station_-_panoramio.jpg');
+}
+
+.bridgeHidden {
+display: none;
+}
+
+#bridgeOne {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9e/HMS_Belfast_1_db_cropped.jpg');
+}
+#bridgeTwo {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2c/Tower_of_London_viewed_from_the_River_Thames.jpg');
+}
+#bridgeThree{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cb/Swissre.and.tower42.london.arp.jpg');
+}
+#bridgeFour {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/9d/Southwark_Cathedral_at_night.jpg');
+}
+#bridgeFive {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/ca/Southwark.cathedral.nave.london.arp.jpg');
+}
+#bridgeSix {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b7/Globe_Theatre_London.jpg');
+}
+#bridgeSeven {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a7/Globe_Theatre_Innenraum.jpg');
+}
+#bridgeEight {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/97/The_Shard%2C_11_Novembre_2012_%28tone%29.jpg');
+}
+#bridgeNine {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4b/The_Shard_London_22.jpg');
+}
+#bridgeTen {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/e2/Old_Billingsgate_Market_Mars_2014_01.jpg');
+}
+#bridgeEleven {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/48/London_Bridge_security_barriers.jpg');
+}
+#bridgeTwelve {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/59/Tower_Bridge_at_Dawn.jpg');
+}
+
+
+.oxfordHidden {
+display: none;
+}
+
+#oxfordOne {
+  background-image: url('https://media.timeout.com/images/103004452/750/422/image.jpg');
+}
+#oxfordTwo {
+  background-image: url('https://www.londoncocktailclub.co.uk/wp-content/uploads/2016/11/viewbar-oxford-1.jpg');
+}
+#oxfordThree{
+  background-image: url('https://thespaces.com/wp-content/uploads/2018/04/culpeper-london.jpg');
+}
+#oxfordFour {
+  background-image: url('https://www.justopenedlondon.com/wp-content/uploads/2017/01/ralphs-coffee4.jpg');
+}
+#oxfordFive {
+  background-image: url('https://secretldn.com/wp-content/uploads/2016/05/notch-1.jpg');
+}
+#oxfordSix {
+  background-image: url('https://blog.etsy.com/uk/files/2016/07/JohnLewis-GardeningSociety-0393.jpg');
+}
+#oxfordSeven {
+  background-image: url('http://redonline.cdnds.net/main/thumbs/18013/the-culpeper-rooftop-bar-restaurant-redonline.jpg');
+}
+#oxfordEight {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Oxford_Circus_stn_Bakerloo_building.jpg/800px-Oxford_Circus_stn_Bakerloo_building.jpg');
+}
+#oxfordNine {
+  background-image: url('https://www.filgezi.com/wp-content/uploads/2018/02/londra-gezi-rehberi-oxford-caddesi.jpg');
+}
+#oxfordTen {
+  background-image: url('https://static.independent.co.uk/s3fs-public/thumbnails/image/2016/07/14/11/oxford-street.jpg?w968h681');
+}
+#oxfordEleven {
+  background-image: url('http://www.londonfeed.com/wp-content/uploads/2015/09/Oxford_Street.jpeg');
+}
+#oxfordTwelve {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/ae/Oxford_Circus_Bakerloo_Line_northbound.jpg');
+}
+
+
+.regentsHidden {
+display: none;
+}
+
+#regentsOne {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/59/Regent%27s_Park_bandstand.jpg');
+}
+#regentsTwo {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/33/Regent%27s_Park_Garden.jpg');
+}
+#regentsThree{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2a/Regent%27s_Park_London.jpg');
+}
+#regentsFour {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/74/H.G._WELLS_-_13_Hanover_Terrace_Regent%27s_Park_London_NW1_4JR_est.jpg');
+}
+#regentsFive {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/c6/Regent%27s_Canal_between_Camden_Lock_and_Regent%27s_Park.jpg');
+}
+#regentsSix {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/f3/Regent%27s_Park_Queen_Mary_Gardens_lake_3.JPG');
+}
+#regentsSeven {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/30/Regent%27s_Park-Queen_Mary%27s_Gardens.jpg');
+}
+#regentsEight {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7d/Pergola_walk%2C_Garden_of_St_John%27s_Lodge%2C_Regent%27s_Park%2C_London.jpg');
+}
+#regentsNine {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4f/THOMAS_COCHRANE_and_DAVID_EARL_BEATTY_-_Hanover_Lodge_Outer_Circle_Regent%27s_Park_London_NW1_4RJ_%282%29.jpg');
+}
+#regentsTen {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/3/3e/Decimus_Burton_The_Holme_Regents_Park_December_2005.jpg');
+}
+#regentsEleven {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/87/Regent%27s_Park_Terrace2.jpg');
+}
+#regentsTwelve {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d2/Fountain%2C_Regent%27s_Park%2C_London_-_DSC07051.JPG');
+}
+
+.shoreditchHidden {
+display: none;
+}
+
+#shoreditchOne {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/0f/Graffiti_in_Shoreditch%2C_London_-_Jim_Vision%2C_In_memory_of_Frank_Frazetta_%2813822516963%29.jpg');
+}
+#shoreditchTwo {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/96/Graffiti_in_Shoreditch%2C_London_-_Dale_Grimshaw_%2813784982583%29.jpg');
+}
+#shoreditchThree{
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cf/George_and_Dragon%2C_Shoreditch%2C_E2_%282373397809%29.jpg');
+}
+#shoreditchFour {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/2a/Joiners_Arms%2C_Shoreditch%2C_E2_%287371431390%29.jpg');
+}
+#shoreditchFive {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4f/Shoreditch_High_Street_stn_entrance_April2010.jpg');
+}
+#shoreditchSix {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/b7/Graffiti_in_Shoreditch%2C_London_-_Garage_by_Stik_%289425023786%29.jpg');
+}
+#shoreditchSeven {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/7e/Graffiti_in_Shoreditch%2C_London_-_Zabou%2C_Privacy_%2812887906353%29.jpg');
+}
+#shoreditchEight {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/6f/Boxpark_Croydon.jpg');
+}
+#shoreditchNine {
+  background-image: url('https://qz.com/wp-content/uploads/2014/03/shoreditch.jpg?quality=80&strip=all&w=940');
+}
+#shoreditchTen {
+  background-image: url('http://igor.gold.ac.uk/~gbass002/wordpress/wp-content/uploads/2016/11/IMG_5946.jpg');
+}
+#shoreditchEleven {
+  background-image: url('https://www.politicalite.com/wp-content/uploads/2018/03/1200px-Brick_Lane_street_signs.jpg');
+}
+#shoreditchTwelve {
+  background-image: url('https://handluggageonly.co.uk/wp-content/uploads/2015/08/hr2_TOMTER_1110_VU_3871.jpg');
+}
+
+.waterlooHidden {
+display: none;
+}
+
+#waterlooOne {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/9/99/London_Eye_and_Sea_Life_London_Aquarium_at_night.jpg');
+}
+#waterlooTwo {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/c/cc/Uddberbelly_Hong_Kong_201512.jpg');
+}
+#waterlooThree{
+  background-image: url('https://i1.wp.com/www.weekender.co.uk/wp-content/uploads/2017/04/underbelly.jpg?fit=800%2C534');
+}
+#waterlooFour {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/12/Aquarium_Tunnels%2C_Kelly_Tarlton_Aquarium.jpg');
+}
+#waterlooFive {
+  background-image: url('https://almacantar.com/app/uploads/2015/10/3069_4000_160617A_xfer-1400x934.jpg');
+}
+#waterlooSix {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/70/Waterloo-Station-2013.JPG');
+}
+#waterlooSeven {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/82/450115_A_London_Waterloo.JPG');
+}
+#waterlooEight {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d8/London_Waterloo_station.JPG');
+}
+#waterlooNine {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/78/Thames_at_night_from_Waterloo_Bridge.JPG');
+}
+#waterlooTen {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/ff/2017_at_Waterloo_station_-_Victory_arch_sculpture_%28Britannia%2C_original_image%29.JPG');
+}
+#waterlooEleven {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/d/d2/Southbank_Centre_aerial_photo.jpg');
+}
+#waterlooTwelve {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/f/fc/London_Eye_Jan_2006.jpg');
+}
